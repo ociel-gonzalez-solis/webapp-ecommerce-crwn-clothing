@@ -34,23 +34,17 @@ class App extends React.Component {
           });
         });
       }
-
       setCurrentUser(userAuth);  
-
     });
   }
 
-  componentWillUnmount() {    
-
-    
+  componentWillUnmount() {   
     this.unsubscribeFromAuth();
   }
 
   render() {
-
     return (
       <div>
-
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
